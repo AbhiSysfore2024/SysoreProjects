@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+   }
+   
+   body {
+    margin: 0px;
+    background-color: rgb(201, 201, 201);
+    font-family: "segoe ui";
+   }
+   
+   .title-bar {
+    height: 68px;
+    width: 100%;
+    background-color: rgb(46,49,146);
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+    padding-left: 30px;
+   }
+
+   .title-bar .nav-bar p{
+    color: white;
+   }
+
+
+   .title-bar h3{
+       color: #FFFFFF;
+       padding: 0px;
+       margin: 0px;
+       font-size:medium;
+   }
+
+   .title-bar p{
+       color: #FFFFFF;
+       margin: 0px;
+       padding: 0px;
+       font-size:x-small;
+   }
+
+   .title-bar .name h3{
+    color: #FFFFFF;
+    font-size: medium;
+   }
+
+   .title-bar .name p{
+    color: #FFFFFF;
+    font-size: x-small;
+   }
+
+   .nav-bar{
+    width:80%;
+   }
+
+   .logo{
+    padding: 11px 13px;
+    border-radius: 100%;
+    background-color: rgba(78,81,163,255);
+   }
+
+   .nav-links{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap:50px;
+    margin:0;
+    padding: 0 0 0 90px;
+    max-width: 200px;
+   }
+
+   .nav-links a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3 ease;
+   }
+
+   .nav-links a:hover{
+    color: #ffcc00;
+   }
+   
+   .header {
+       width:100%;
+       background-color: white;
+       padding-left: 30px;
+       position: absolute;
+       margin: 0;
+   }
+
+   .header h3{
+       padding: 0px;
+       margin: 0;
+       margin-top: 10px;
+   }
+
+   .header p{
+    opacity: 0.7;
+    padding: 0;
+    margin-top: 2px;
+   }
+
+   .container {
+      position: relative;
+      width: 96%;
+      padding: 28px;
+      margin-top: 105px;
+      margin-left: 2%;
+      margin-right: 2%;
+      background-color: #FFFFFF;
+      height: 450px;
+   }
+
+   .container table{
+    border-collapse: collapse;
+    width: 55%;
+   }
+
+   th, td{
+    padding: 10px 11px 10px 40px;
+    text-align:justify;
+}
+
+    th {
+        width: 33%;
+        background-color: rgb(247, 249, 251);
+        color: rgb(185, 190, 200);
+        border-bottom: 1px  solid  rgba(153, 152, 151, 0.4);
+    }
+
+
+    td {
+        border-bottom: 1px solid  rgba(153, 152, 151, 0.4);
+    }
+
+   .footer {
+       position: absolute;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: white;
+       text-align: center;
+       padding: 4px;
+       opacity: 0.6;
+   }

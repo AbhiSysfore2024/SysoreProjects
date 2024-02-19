@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Page</title>
+    <link rel="stylesheet" href="information.css">
+</head>
+<body>
+  <div class="title-bar">
+    <img src="Images/main-logo.svg" width="130px";>
+
+<div class="nav-bar">
+        <ul class="nav-links">
+            <li><a href="https://www.sysfore.com/" target="_blank">DASHBOARD</a></li>
+            <li><a>PROFILE</a></li>
+        </ul>
+    </div>
+
+    <div class="logo">
+      <img src="Images/user-icon.svg" width="15px";>
+  </div>
+  
+    <div class="name">
+        <h3>Abhilash S</h3><p>Hello Welcome</p>
+        
+    </div>
+
+    </div>
+
+<div class="header">
+            <h3>PROFILE</h3>
+            <p>View profile details below</p> 
+    </div>
+ </div>
+</div>
+
+    <div class="container">
+    <table>
+      <tr>
+        <th>FIRST NAME</th>
+        <td><span id="firstName"></span></td>
+      </tr>
+
+      <tr>
+        <th>LAST NAME</th>
+        <td><span id="lastName"></span></td>
+      </tr>
+
+      <tr>
+        <th>MIDDLE NAME</th>
+        <td><span id="middleName"></span></td>
+      </tr>
+
+      <tr>
+        <th>DOB</th>
+        <td><span id="dateOfBirth"></span></td>
+      </tr>
+
+      <tr>
+        <th>EMAIL</th>
+        <td><span id="eMail"></span></td>
+      </tr>
+
+      <tr>
+        <th>PHONE</th>
+        <td><span id="Phone"></span></td>
+      </tr>
+
+      <tr>
+        <th>BLOOD GROUP</th>
+        <td><span id="bloodGroup"></span></td>
+      </tr>
+
+      <tr>
+        <th>COMMENTS</th>
+        <td><span id="Comments"></span></td>
+      </tr>
+    </table>
+    </div>
+
+    <footer>
+      <div class="footer">
+       <p>2004 - 2024 Sysfore Technologies Pvt. Ltd. All Rights Reserved</p>
+   </div>
+   </footer>
+
+    <script>
+        document.getElementById('firstName').innerText = sessionStorage.getItem('firstName') || 'N/A';
+        document.getElementById('lastName').innerText = sessionStorage.getItem('lastName') || 'N/A';
+        document.getElementById('middleName').innerText = sessionStorage.getItem('middleName') || 'N/A';
+        document.getElementById('dateOfBirth').innerText = sessionStorage.getItem('dateOfBirth') || 'N/A';
+        document.getElementById('eMail').innerText = sessionStorage.getItem('eMail') || 'N/A';
+        document.getElementById('Phone').innerText = sessionStorage.getItem('Phone') || 'N/A';
+        document.getElementById('bloodGroup').innerText = sessionStorage.getItem('bloodGroup') || 'N/A';
+        document.getElementById('Comments').innerText = sessionStorage.getItem('Comments') || 'N/A';
+    </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="fillStyle.css">
+</head>
+
+<body>
+    <header>
+    <div class="title-bar">
+        <img src="Images/main-logo.svg" width="130px";>
+
+   <div class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="https://www.sysfore.com/" target="_blank">DASHBOARD</a></li>
+                <li><a>PROFILE</a></li>
+            </ul>
+        </div>
+        
+        <div class="logo">
+            <img src="Images/user-icon.svg" width="15px";>
+        </div> 
+        <div class="name">
+            <h3>Abhilash S</h3><p>Hello Welcome</p> 
+        </div>
+
+        </div>
+
+    <div class="header">
+                <h3>PROFILE INFO</h3>
+                <p>Fill your details below</p> 
+        </div>
+     </div>
+   </div>
+
+   <div class="container">
+     <form action="information.html" id="form">
+
+        <div class="fields">
+            <div class="input-field">
+                <label><b>First Name</b></label>
+                <input type="text" name="first_name" required>
+            </div>
+
+            <div class="input-field">
+                <label><b>Last Name</b></label>
+                <input type="text" name="last_name" required>
+            </div>
+
+            <div class="input-field">
+                <label><b>Middle Name</b></label>
+                <input type="text"  name="middle_name" required>
+            </div>
+
+            <div class="input-field">
+                <label><b>Date of Birth</b></label>
+                <input type="date" name="date_of_birth" required>
+            </div>
+
+            <div class="input-field">
+                <label><b>E-mail</b></label>
+                <input type="text" name="e_Mail" required>
+            </div>
+
+            <div class="input-field">
+                <label><b>Phone</b></label>
+                <input type="number" name="phone_number" required>
+            </div>
+
+            <div class="input-field">
+                <label><b>Gender</b></label>
+                <select name="gender" required>
+                    <option disabled selected>Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Prefer not to say</option>
+                </select>
+            </div>
+
+            <div class="input-field">
+                <label><b>Blood Group</b></label>
+                <select name="blood_group" required>
+                    <option disabled selected>Select Blood Group</option>
+                    <option>A+ Positive</option>
+                    <option>O+ Positive</option>
+                    <option>B+ Positive</option>
+                    <option>AB+ Positive</option>
+                    <option>A- Negative</option>
+                    <option>O- Negative</option>
+                    <option>B- Negative</option>
+                    <option>AB- Negative</option>        
+                </select>
+            </div>
+
+            <div class="input-field">
+                <label for="comment"><b>Comments</b></label>
+                <textarea id="comment" name="comments"></textarea>
+            </div>
+
+        </div>
+
+        <div class="input-field">
+            <button type="submit">Submit</button>
+        </div>
+     </form>
+ 
+    
+    <div class="button-container">
+     <button type="button" onclick="cancel()"
+         style="background-color: rgb(232, 236, 237);
+          color: rgb(22, 21, 21)">Cancel</button>
+
+        </div>
+</div>
+
+   <footer>
+   <div class="footer">
+    <p>2004 - 2024 Sysfore Technologies Pvt. Ltd. All Rights Reserved</p>
+</div>
+</footer>
+
+<script>
+
+    function cancel() {
+        document.getElementById("form").reset();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('form');
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            const firstName = document.querySelector('input[name="first_name"]').value;
+            const lastName = document.querySelector('input[name="last_name"]').value;
+            const middleName = document.querySelector('input[name="middle_name"]').value;
+            const dateOfBirth = document.querySelector('input[name="date_of_birth"]').value;
+            const eMail = document.querySelector('input[name="e_Mail"]').value;
+            const Phone = document.querySelector('input[name="phone_number"]').value;
+            const Gender = document.querySelector('select[name="gender"]').value;
+            const bloodGroup = document.querySelector('select[name="blood_group"]').value;
+            const Comments = document.querySelector('textarea[name="comments"]').value;
+
+     
+            sessionStorage.setItem('firstName', firstName);
+            sessionStorage.setItem('lastName', lastName);
+            sessionStorage.setItem('middleName', middleName);
+            sessionStorage.setItem('dateOfBirth', dateOfBirth);
+            sessionStorage.setItem('eMail', eMail);
+            sessionStorage.setItem('Phone', Phone);
+            sessionStorage.setItem('Gender', Gender);
+            sessionStorage.setItem('bloodGroup', bloodGroup);
+            sessionStorage.setItem('Comments', Comments);
+
+            window.location.href = form.getAttribute('action');
+        });
+    });
+</script>
+
+</body>
+</html>

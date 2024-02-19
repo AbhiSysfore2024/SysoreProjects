@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+    body {
+        background-image: url('Images/login-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  font-family: sans-serif;
+     
+}
+    
+    .container{ 
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:center;
+     height: 100vh;
+
+    }
+
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    
+    .card{
+        background-color: white;
+        width: 430px;
+        padding: 45px 40px 45px 40px;        
+    }
+
+
+    .heading h2{
+        padding:0px;
+        margin-bottom: 10px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: larger;
+        
+    }
+    .heading p{
+        opacity: 0.6;
+        margin-top: 2px;
+        margin-bottom: 30px;
+        font-size: medium;
+    }
+
+    .form-field{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .form-field label{
+        display: block;
+        margin-bottom: 2px;
+        font-weight: bold;
+    }
+    button{
+        width: 100%;
+        padding: 15px;
+        border: 0;
+        background-color:  #d9480f;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.3 ease;
+    }
+
+
+    .form-field button:hover{
+        background-color: #e85f31;
+
+    }
+    
+    .form-field input{
+        width: 100%;
+        height: 40px;
+    border-radius: 2px;
+    border: 1px solid #808080;
+    padding: 0 5px;
+    margin: 15px 0 20px 0;
+    }
+
+    @media screen and (max-width: 600px) {
+        .container{
+        
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            height: 100vh;
+            width: 300px;
+            
+           }
+      }
+         

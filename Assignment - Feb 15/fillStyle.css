@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+   }
+   
+   body {
+    margin: 0px;
+    background-color: rgb(201, 201, 201);
+    font-family: "segoe ui";
+   }
+   
+   .title-bar {
+    height: 68px;
+    width: 100%;
+    background-color: rgb(46,49,146);
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+    padding-left: 30px;
+   }
+
+   .title-bar .nav-bar p{
+    color: white;
+   }
+
+
+   .title-bar h3{
+       color: #FFFFFF;
+       padding: 0px;
+       margin: 0px;
+       font-size:medium;
+   }
+
+   .title-bar p{
+       color: #FFFFFF;
+       margin: 0px;
+       padding: 0px;
+       font-size:x-small;
+   }
+
+   .name{
+     margin-left: -10px;
+   }
+
+   .logo{
+    padding: 11px 13px;
+    border-radius: 100%;
+    background-color: rgba(78,81,163,255);
+   }
+  
+   .title-bar .name h3{
+    color: #FFFFFF;
+    font-size: medium;
+   }
+
+   .title-bar .name p{
+    color: #FFFFFF;
+    font-size: x-small;
+   }
+
+   .nav-bar{
+    width:80%;
+   }
+
+   .nav-links{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap:50px;
+    margin:0;
+    padding: 0 0 0 90px;
+    max-width: 300px;
+   }
+
+   .nav-links a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3 ease;
+   }
+
+   .nav-links a:hover{
+    color: #ffcc00;
+   }
+   
+   .header {
+       width:100%;
+       background-color: white;
+       padding-left: 30px;
+       position: absolute;
+       margin: 0;
+   }
+
+   .header h3{
+       padding: 0px;
+       margin: 0px;
+       margin-top: 10px;
+   }
+
+   .header p{
+    opacity: 0.7;
+    padding: 0;
+    margin-top: 2px;
+   }
+
+   .container {
+      position: relative;
+      width: 95.5%;
+      padding: 18px 40px 0 40px;
+      margin-top: 115px;
+      margin-left: 2.25%;
+      margin-right: 2.25%;
+      background-color: #FFFFFF;
+      height: 390px;
+   }
+
+   .container form {
+      position: relative;
+      background-color: #FFFFFF;
+   }
+
+
+   .container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+   form .fields .input-field{
+    display:flex;
+    flex-direction: column;
+    margin: 5px 0;
+    width: 320px;
+   }
+
+   .input-field label{
+      font-size: 15px;
+   }
+
+   .input-field input{
+      padding: 15px;
+   }
+   .input-field select{
+       height: 60px;
+   }
+
+   .input-field textarea{
+    flex-direction: column;
+    width: 1386px;
+    height: 100px;
+    padding: 20px;
+   }
+
+   .input-field button {
+    position: absolute;
+    right: 10px;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: rgb(252,91,11);
+    color: white;
+    border: none;
+   }
+
+   .input-field button:hover{
+    color: white;
+   }
+
+    .button-container button{
+    position: absolute;
+    width: 100px;
+    right: 165px;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+   }
+
+
+   .footer {
+       position: absolute;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: white;
+       text-align: center;
+       padding: 5px;
+       opacity: 0.6;
+   }
