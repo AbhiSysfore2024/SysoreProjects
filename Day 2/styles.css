@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+   }
+   
+   body {
+    margin: 0px;
+    background-color: rgb(201, 201, 201);
+
+    font-family: "segoe ui";
+   }
+   
+   .title-bar {
+    height: 75px;
+    width: 100%;
+    background-color: #0813b3d5;
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+   }
+
+   .title-bar h3{
+       color: #FFFFFF;
+       padding: 0px;
+       margin: 0px;
+       font-size:medium;
+   }
+
+   .title-bar p{
+       color: #FFFFFF;
+       margin: 0px;
+       padding: 0px;
+       font-size:x-small;
+   }
+
+   
+   .header {
+       width:100%;
+       background-color: #1520bcd5;
+
+   }
+
+   .nav-links {
+       list-style: none;
+       margin: 0;
+       display: flex;
+       background-color: #0c17abc9;
+       gap: 30px;
+       padding: 20px;
+   }
+
+   .nav-links a {
+       text-decoration: none;
+       color: white;
+   }
+
+   .dashboard-box {
+       display: flex;
+       justify-content: space-around;
+       margin-top: 40px;
+       margin-left: 5px;
+       margin-right: 10px;
+   }
+
+
+   .dashboard-item {
+       flex: 1;
+       height: 135px;
+       text-align: center;
+       line-height: 70px; /* text alignement */
+       margin: 0 25px;
+       font-size: 18px;
+       color: #fff;
+   }
+
+   .dashboard-item h1{    
+       text-align: center;
+       line-height: 3px;
+       margin: 1px 0;
+   }
+
+   .rectangle-container {
+       display: flex;
+       background-color: #FFFFFF;
+       justify-content: space-between;
+       margin-top: 30px;
+       margin-left: 30px;
+       margin-right: 35px;
+       align-items: center;
+   }
+
+   .image-container {
+       padding: 20px 30px 0 30px;  
+   }
+
+   .content-container img {
+       border-radius: 20px;
+   }
+
+   .content-container {
+       flex: 1;
+       padding: 20px;
+       justify-content: space-around;
+       margin-top: 100px;
+       text-align: justify;
+   }
+
+   .footer {
+       position: absolute;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: white;
+       text-align: center;
+       padding: 5px;
+   }
