@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <div class="container" >
+        <div class="card">
+            <div class="heading" id="headi">
+                <h2>Login</h2>
+                <p>Please Enter valid username and password</p>
+                </div>
+               
+                <div class="form-field" id="formfieldid">
+                </div>
+        </div>
+    </div>    
+</body>
+
+
+<script >
+
+const userCredentials = {
+    "abhi@gmail.com": "12@#4pass00",
+    "aman@gmail.com": "vromvrom33##",
+    "agarwal@gmail.com": "wde44%344dd",
+};
+
+
+function show() {
+  let name = inputfieldname.value;
+  let pass = password.value;
+
+  if (name.length === 0 && pass.length === 0) {
+    alert("Please enter valid Email and Password");
+
+  } else if (pass.length === 0) {
+    alert("Please enter the password (min 8 characters)");
+
+  } 
+
+  else if (userCredentials[name] === pass){
+    console.log(name);
+    alert("Login Successfull !!" + "\n" + "Username: " + name + "\n" + "Password: " + pass);
+  }
+
+  else {
+    alert("Incorrect Credentials");
+  }
+}
+
+
+
+
+   const formfield=document.querySelector("#formfieldid");
+   const label=document.createElement("label");
+   const inputfieldname=document.createElement("input");
+   const label2=document.createElement("label");
+   const password=document.createElement("input");
+
+   password.setAttribute("type", "password");
+
+   let name=" "
+   let pass=" "
+
+   label.innerHTML="Username"
+   label2.innerHTML="Password"
+
+   formfield.appendChild(label);
+   formfield.appendChild(inputfieldname);
+   formfield.appendChild(label2);
+   formfield.appendChild(password);
+   
+   const submit=document.createElement("button");
+
+
+   submit.innerHTML="Login your account"
+   submit.setAttribute("type","submit");
+   
+   submit.addEventListener("click",show)
+   formfield.appendChild(submit);
+   
+</script>
+</html>
